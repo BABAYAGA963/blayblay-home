@@ -1,4 +1,5 @@
-FROM node:18-alpine AS base
+# เปลี่ยนจาก 18 เป็น 20
+FROM node:20-alpine AS base
 WORKDIR /app
 COPY package.json package-lock.json* ./
 RUN npm ci
